@@ -1,0 +1,17 @@
+<!doctype 5>
+<html>
+  <head>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  </head>
+  <body>
+    # for message in get_flashed_messages()
+    <div>{{message}}</div>
+    # endfor
+    <h1>Upload Files</h1>
+    <form method="POST" action="/" enctype="multipart/form-data">
+      <input type="file" name="set" multiple>
+      <input type="submit" value="upload">
+    </form>
+</html>
